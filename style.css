@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FCFCFC;
+    color: #101010;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    /*background-color: coral;*/
+    min-height: 80px;
+    margin: 0;
+    padding-top: 16px;
+}
+
+.container{
+    width:90%;
+    margin: 0 auto;
+}
+
+#logo{
+    float: left;
+    margin-top: 4px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#searchWeather{
+    text-align: center;
+    
+}
+
+#searchWeather input{
+    padding: 10px;
+    width: 400px;
+    border: 3px solid #FCFCFC;
+    text-align: center;
+    font-size: 1.2em;
+    color: #FCFCFC;
+    background-color: #101010;
+    border-radius: 24px;
+    margin-left: 40px;
+}
+
+#searchWeather input:focus{
+    outline: none;
+}
+
+#searchWeather button:focus{
+    outline: none;
+}
+
+#searchWeather button{
+    padding: 10px;
+    width: 220px;
+    border: 2px solid #FCFCFC;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #101010;
+    background-color: #FCFCFC;
+    cursor: pointer;
+    border-radius: 24px;
+    margin-left: 16px;
+}
+
+#searchWeather button:hover{
+    border: 2px solid #101010;
+}
+
+/* Content Meteo */
+#weatherCondition{
+    text-align: center;
+    /*background-color: aquamarine;*/
+    padding: 90px;
+    height:380px;
+}
+
+#weatherCondition h1{
+    font-size: 2.4em;
+}
+
+#weatherCondition h2{
+    font-size: 2.4em;
+}
+
+#weatherCondition h3{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#gradiTemp{
+    margin: 50px;
+}
+
+#descriptionMeteo{
+    padding-bottom: 20px;
+}
+
+
+/* footer */
+footer{
+	background-color: #101010;
+	text-align: center;
+}
+
+address{
+    padding: 0;
+    color: #FCFCFC;
+	font-size: 18px;
+}
+
+#email{
+	text-decoration: none;
+	font-style: normal;
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-left: 20px;
+	color: black;
+	letter-spacing: 0.2em;
+	transition: transform 1.6s;
+	font-weight: 600;
+}
+
+
+#social{
+	margin-top: 0;
+	padding-top: 40px;
+}
+
+#social a{
+	padding: 20px 20px 0 20px;
+	color: #FCFCFC;
+	
+}
+
+#social i:hover{
+	transform: scale(1.5);
+}
+
+#social i{
+	font-size: 30px;
+	transition: transform 1.6s;
+}
+
+address p{
+    font-style: normal;
+    padding: 30px;
+    margin: 0;
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    #logo{
+        float: none;
+        text-align: center;
+    }
+    #searchWeather input{
+        margin: 40px 0 0 0;
+    }
+
+    #searchWeather button{
+        margin-top: 20px;
+    }
+}
